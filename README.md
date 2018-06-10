@@ -11,3 +11,7 @@ To get started, click on a card. Keep revealing cards and working your memory to
 
 Contributing
 This is the project of the Google Udacity FEND nanodegree. Contributions are always welcome!
+
+External libraries
+https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+https://fonts.googleapis.com/css?family=Coda
