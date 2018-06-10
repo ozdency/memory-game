@@ -2,7 +2,7 @@
 const icons = ['fa-anchor','fa-bicycle','fa-diamond','fa-leaf','fa-bomb','fa-bolt','fa-paper-plane-o','fa-cube'];
 let cards = [];
 
-// GLobal DOM selectors, document fragmet, and variables
+// GLobal DOM selectors, document fragment, and variables
 let globalTimer = null;
 const timerDiv = document.querySelector('.timer');
 const playAgainButton = document.querySelector('.play-again');
@@ -95,12 +95,12 @@ const closeErrors = () => {
 const handleClick = (e,i) => {
   // exit if user tries to click on a card that is already solved
   if (cards[i].isSolved === true) {
-    displayErrors('You found this match already, try clicking a new card');
+    displayErrors('You found this match already, try to click another card');
     return;
   }
   // exit if matching is occuring(2 cards have been selected), user can only click two cards at a time
   if (state.noClicks) {
-    displayErrors('Be patient young grasshopper, you can only match two cards at once');
+    displayErrors('You can only match two cards at once');
     return;
   }
   // if we are not matching lets just flip the card
@@ -110,7 +110,7 @@ const handleClick = (e,i) => {
     // if we are matching make sure we clicked on another card
     if (state.firstIndex === i) {
       state.noClicks = false;
-      displayErrors('You just clicked this card, try clicking a new card');
+      displayErrors('You just clicked this card, try to click another card');
       return;
     } else {
       // check the match
@@ -159,7 +159,7 @@ const handleMatch = (e,i,match) => {
     setTimeout(function(){
         e.target.firstChild.classList.toggle('hidden');
 	  }, 250)
-    // wait 1 second for animcations and then hide the cards again
+    // wait 1 second for animations and then hide the cards again
     setTimeout(function(){
       e.target.className = 'card close';
       state.firstCard.target.className = 'card close';

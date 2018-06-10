@@ -274,6 +274,7 @@ section.game-panel {
 .winner-stats {
     display: flex;
     min-width: 200px;
+    min-height: 200 px;
     justify-content: center;
 }
 
@@ -285,7 +286,6 @@ section.game-panel {
 .stats-left div {
     border-bottom: 2px solid;
     padding: 10px;
-    font-weight: bold;
 }
 
 .stats-right {
@@ -295,8 +295,9 @@ section.game-panel {
 
 .stats-right div {
     border-bottom: 2px solid;
-    border-left: 2px solid;
     padding: 10px;
+    border-left: 2px solid;
+
 }
 
 .winner-message button {
@@ -386,7 +387,7 @@ a.close {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #f95b3c;
+    background: purple;
     color: white;
     border-radius: 5px;
     font-size: 14px;
